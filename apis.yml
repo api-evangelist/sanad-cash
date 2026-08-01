@@ -1,7 +1,27 @@
 aid: sanad-cash
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sanad-cash.png
 name: Sanad Cash
-description: Sanad Cash is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Sanad Cash was a Saudi Arabia-based fintech startup that operated an on-demand
+  payment platform, giving employees early access to earned wages and providing
+  employers with tools to manage on-demand pay. The company raised a $1.6M seed
+  round in January 2022 with participation from Impact46 and was backed by 500
+  Global. Sanad Cash was acquired by HyperPay in July 2023, and the Sanad Cash
+  business was subsequently acquired by Qashio in October 2025. The independent
+  sanadcash.com property is no longer reachable (no live HTTPS service), so this
+  profile documents the company's identity and residual domain footprint rather
+  than a live developer/API surface.
 url: https://raw.githubusercontent.com/api-evangelist/sanad-cash/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,17 +29,33 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-status-detail: Acquired by HyperPay (July 2023); Sanad Cash business acquired by Qashio (October 2025). Independent site offline.
+x-country: Saudi Arabia
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-apis: []
+- Fintech
+- Payments
+- On-Demand Pay
+- Earned Wage Access
+- Saudi Arabia
+- Acquired
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis: []
 common:
+- type: DomainSecurity
+  url: security/sanad-cash-domain-security.yml
 - type: Website
   url: https://sanadcash.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
